@@ -15,6 +15,15 @@ body{
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
+
+hr{
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 40px 0;
+  border: 0;
+  border-color: #e5e5e5;
+}
 /*container*/
 .container {
   width: 100%;
@@ -221,7 +230,7 @@ linear, color .2s linear;
 .section_header{
   width: 100%;
   max-width: 950px;
-margin: 0 auto 40px;
+margin: 0 auto 50px;
 text-align: center;
 }
 
@@ -255,6 +264,7 @@ text-align: center;
 
 /* About */
 .about{
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -307,4 +317,72 @@ text-align: center;
   transform: translate3d(0, -50%, 0);
 
   transition: opacity .1s linear;
+}
+
+/* statistics */
+
+.statistics{
+  background-color: #95e1d3;
+}
+
+.stat{
+  display: flex;
+}
+.stat_item{
+  flex: 1 1 0;
+  padding: 70px 25px;
+  border-left: 1px solid #b5eae0;
+  text-align: center;
+  color: #fff;
+}
+
+.stat_item:last-child{
+  border-right: 1px solid #b5eae0;
+}
+
+.stat_count{
+  margin-bottom: 10px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat_text{
+  font-size: 14px
+  text-transform:uppercase;
+}
+
+/* Services */
+
+.services{
+  display: flex;
+
+}
+
+.services_item{
+  flex: 1 1 0;
+  padding-left: 85px;
+  padding-right: 35px;
+  position: relative;
+}
+.services_icon{
+  position: absolute;
+  top: 0;
+  left: 28px;
+  z-index: 1;
+}
+
+.services_title{
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+
+}
+
+.services_text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #999;
+
 }
