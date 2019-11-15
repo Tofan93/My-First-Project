@@ -24,7 +24,9 @@
     </div>
   </nav>
 </header>
-
+<main><h1>Location</h1>
+  <div id='map'></div>
+</main>
 <footer>
 <nav>
   <a href="index.html">home</a>
@@ -47,6 +49,17 @@
 </div>
 <p>Tofan Blog. 2019</p>
 </footer>
+<script>
+function initMap() {
+  var uluru = {lat: 50.290147, lng: 127.527474};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfyeHAYU3Cy7cl29QxAvW78ih7JvUEXas&callback=initMap">
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>

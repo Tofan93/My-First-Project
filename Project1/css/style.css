@@ -107,7 +107,7 @@ footer nav a:hover{
   margin-bottom: 10px;
 }
 .social img:hover{
-  background: blue;
+border: 2px solid white;
   border-radius: 10%;
 }
 
@@ -212,12 +212,60 @@ footer nav a:hover{
   padding: 0 .5rem;
 }
 
+#map{
+  width: 100%;
+  height: 400px;
+}
 
-
-
-
-
-
+.form{
+  width: 50%;
+  margin: 50px auto;
+}
+.feedback-input{
+  color: #941018;
+  font-weight: 300;
+  font-style: 14px;
+  line-height: 22px;
+  background-color: #fff;
+  padding: 13px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0px solid transparent;
+  border-bottom: 1px solid #941018;
+}
+textarea{
+  border: solid 1px #941018;
+  width: 100%;
+  height: 150px;
+  resize:vertical;
+  color: #941018;
+}
+.button-submit{
+  float: left;
+  width: 100%;
+  border: 0px solid transparent;
+  cursor: pointer;
+  background-color: #941018;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 300;
+}
+.button-submit:hover{
+  background-color: #fff;
+  color: #941018;
+  border: 1px solid #941018;
+}
+.ease{
+  width: 0;
+  height: 74px;
+  background-color: #fbfbfb;
+  transition: .3s ease;
+}
 
 
 
@@ -293,4 +341,7 @@ nav{
 }
 .blog-container{
   width: 20rem;
+}
+
+
 }
