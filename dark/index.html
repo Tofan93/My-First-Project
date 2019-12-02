@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ТК Мой Город</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+   <div class="header-container">
+     <div class="logo">
+       <img src="css/img/logo.png" alt="logo">
+     </div>
+     <input type="checkbox" id="menu-checkbox">
+      <nav role="navigation">
+        <ul class="contacts">
+          <li class="contacts1">
+          <h1>8-800-250-60-40</h1>
+          <p>Звонок по России бесплатный</p>
+        </li>
+          <li class="contacts2">
+            <p><img src="css/img/pl.png" alt="">Головной офис:</br><a href="#">г.Благовещенск,</br> ул. Cтанционная 70 В(2 этаж)</a></p>
+          </li>
+          <li class="contacts3">
+            <p><img src="css/img/tel.png" alt="">Телефоны:<span>
+            </br>8 (4162) 660-150</br> 8 (4162) 660-110 </br>8 (4162) 660-120</span></p>
+          </li>
+          <li class="lang">
+          <p>RU</p><a href="#">CN</a>
+          </li>
+        </ul>
+        <label for="menu-checkbox" class="toggle-button" data-open="Menu"
+          data-close="Close"  onclick></label>
+          <ul class="main-menu">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Калькулятор</a></li>
+          </ul>
+      </nav>
+   </div>
+
+</header>
+  <main>
+    <section class="top-slide">
+      <div class="top-container">
+        <div><h1>Ежедневно перевозим</br>
+сборные грузы</h1></div>
+        <div><p>Быстрые и надежные перевозки по России,</br>
+Дальнему востоку и Амурской области</p>
+        </div>
+      </div>
+    </section>
+    <section class="specialize">
+      <div class="specialize-container">
+      <h3>Наши продукты</h3>
+      <div class="toop">
+        <img src="css/img/ff.png" alt="">
+      <div class="links">
+        <a class="tooltip" href="#">Авиаперевозки сборных грузов<span><img src="css/img/plane.png"></span></a>
+        <a class="tooltip" href="#">Автомобильные перевозки<span><img src="css/img/tip.png"></span></a>
+        <a class="tooltip" href="#">Оперирование подвижным составом<span><img src="css/img/tr.png"></span></a>
+        <a class="tooltip" href="#">Железнодорожные перевозки<span><img src="css/img/tr1.png"></span></a>
+        <a class="tooltip" href="#">Контейнерные перевозки<span><img src="css/img/cs.jpg"></span></a>
+        <a class="tooltip" href="#">Сопутствующие</br> услуги<span><img src="css/img/sp.jpg"></span></a>
+        <a class="tooltip" href="#">Негабаритные грузы и спецтехника<span><img src="css/img/ng.jpg"></span></a>
+      </div>
+    </div>
+      <div class="specialize-cards">
+        <div class="card">
+          <h1>Акции</h1>
+          <div class="top-card">
+            <div class="bgcard">
+            <img src="css/img/ae.png" alt="">
+            </div>
+            <div class="bgcard">
+            <img src="css/img/dev.png" alt="">
+            </div>
+            <div class="bgcard">
+            <img src="css/img/os.png" alt="">
+            </div>
+            <div class="bgcard">
+            <img src="css/img/tro.png" alt="">
+            </div>
+            <div class="bgcard">
+            <img src="css/img/v.png" alt="">
+            </div>
+            <div class="bgcard">
+            <img src="css/img/b.png" alt="">
+            </div>
+          </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="portfolio">
+      <div class="person">
+      <h1>Коротко о нас<h1>
+          <div class="per1">
+         <img src="css/img/1.png" alt="">
+         <img src="css/img/2.png" alt="">
+         <img src="css/img/3.png" alt="">
+         <img src="css/img/4.png" alt="">
+         <img src="css/img/5.png" alt="">
+           </div>
+           <p>Работаем на рынке грузоперевозок с 2001</br>
+Компания предоставляет предприятиям, госструктурам, частным клиентам полный комплекс транспортно-экспедиционных услуг по перевозке железнодорожным и автомобильным транспортом по всей территории России любых категорий грузов — товаров народного потребления, оборудования, спецтехники, сыпучих грузов и т. д., включая негабаритные грузы.
+Осуществляем перевозки высокой скоростью багажными, грузовыми вагонами, полувагонами, платформами и контейнерами, используя все типы подвижного состава в составе пассажирских, почтово-багажных и ускоренных поездов. Кроме того, возможна авиадоставка.
+          </p>
+          <div class="map1">
+            <h1>Филиалы</h1>
+            <div id='map'></div>
+          </main>
+
+          <script>
+          function initMap() {
+            var uluru = {lat: 50.290147, lng: 127.527474};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 4, center: uluru});
+            var marker = new google.maps.Marker({position: uluru, map: map});
+          }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfyeHAYU3Cy7cl29QxAvW78ih7JvUEXas&callback=initMap">
+              </script>
+              <script src="js/script.js"></script>
+            </div>
+
+  </main>
+<footer>
+  <div class="footer-container">
+  <div class="about-us">
+    <a href="#">ЖД перевозки</a>
+    <a href="#">Авиаперевозки</a>
+    <a href="#">Контейнерные перевозки</a>
+    <a href="#">Автоперевозки</a>
+    <a href="#">Негабарит и спецтехника</a>
+    <a href="#">Подвижной состав</a>
+    <a href="#">Сопутсивующие услуги</a>
+  </div>
+  <div class="tweets">
+    <a href="#">Расчитать стоимость</a>
+    <a href="#">Поиск груза</a>
+    <a href="#">Тарифы</a>
+<h1>8-800-250-60-40</h1>
+<p>Звонок по России бесплатный</p>
+  </div>
+  <div class="contacts4">
+  <h4>Подписка на новости</h4>
+  <div>
+  <p><input class="mail" type="email" name="email" value="E-mail"></p>
+    <div class="cont"><p><input type="checkbox" name="Licence" value="Licence">Согласен с условиями <a href="#">пользовательского соглашения</a></p>
+</div>
+  </div>
+    <div class="cont1"><img src="css/img/tel.png" alt=""><a href="#">Обратный звонок</a></div>
+    <div class="cont2"><img src="css/img/rep.png" alt=""><a href="#">Оставить заявку</a></div>
+  </div>
+  </div>
+</footer>
+</body>
+</html>

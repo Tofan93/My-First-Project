@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body{
+  font-family: 'Lato', sans-serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+  display:inline-block;
+}
+header ul li a{
+  color: #0056A6;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 63px;
+
+}
+header ul li a:hover{
+  color: #F7BC13;
+  transition: .2s;
+}
+.contacts{
+display: flex;
+justify-content: center;
+}
+.contacts a{
+  color:  color: #0056A6;
+}
+.contacts h1{
+  margin: auto;
+  color: #0056A6;
+}
+.contacts1 p{
+  margin-top: 0;
+  font-size: 16px;
+  color: #808080;
+}
+.contacts2{
+  top: 15px;
+}
+.contacts2 p{
+  margin-left: 5px;
+  font-size: 16px;
+  color: #4A4848;
+}
+.contacts2 a{
+  padding-left: 30px;
+}
+.contacts a{
+  float: left;
+}
+
+.contacts2 img{
+  float: left;
+  margin-right: 5px;
+}
+
+.contacts3 img{
+  float: left;
+
+}
+.contacts3 span{
+  color: #0056A6;
+
+}
+.contacts3 p{
+  font-size: 16px;
+  color: #4A4848;
+}
+.lang{
+  display:flex;
+  align-items: center;
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+.lang a{
+margin-left: 10px;
+border-bottom: 1px solid;
+}
+
+a{
+  text-decoration: none;
+}
+header{
+  height: 0;
+  background-color: rgba(255, 255, 255,0.1);
+  padding: 22px 0;
+}
+
+.header-container{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#menu-checkbox{
+  display: none;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+}
+nav{
+  margin-right: 150px;
+  margin-top: 20px;
+}
+.main-menu{
+  margin-top: 20px;
+}
+.top-slide{
+  background: url(img/hedbg.png) no-repeat;
+  padding-top: 170px;
+  padding-bottom: 150px;
+  background-size: 110%;
+}
+.top-container{
+  width: 85%;
+  margin: 0 auto;
+}
+.top-slide h1{
+  color:#4A4848;
+  display: inline;
+  font-size: 64px;
+}
+.top-slide p{
+  display: inline;
+  font-size: 24px;
+  padding: 0 4px;
+  color: #4A4848;
+}
+.toop{
+  display: flex;
+}
+.specialize-container{
+  width: 80%;
+  margin-left: 90px;
+  font-size: 24px;
+  color: #4A4848;
+
+}
+.specialize-container h3{
+  font-size: 35px;
+  margin-bottom:50px;
+}
+.specialize-container p{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+.links{
+  margin-left: 50px;
+}
+.links img{
+  width: 455px;
+  height: 600px;
+}
+.tooltip {
+  font-size: 20px;
+  display: flex;
+  width: 220px;
+  height: 80px;
+  display: table;
+  justify-content: center;
+  text-decoration: none;
+  color:#4A4848;
+  border:1px solid #E5E5E5;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.tooltip:hover{
+  background: #0056A6;
+  color:#EEEBEB;
+
+}
+.tooltip span{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px 5px 5px 5px;
+    visibility: hidden;
+    position: absolute;
+    top: 675px;
+    background: #fff;
+    border-radius: 1px;
+}
+
+.tooltip:hover span{
+  display: flex;
+visibility: visible;
+  margin-left: 220px;
+}
+.first-p{
+  font-size: 20px;
+
+}
+.bottom-card{
+  position: relative;
+  top: -30px;
+}
+.specialize-cards{
+padding-top: 90px;
+}
+
+.top-card{
+  display: flex;
+  padding-top: 20px;
+  justify-content:space-around;
+}
+.bgcard img{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.bgcard{
+  height: 130px;
+  width: 130px;
+  background-color: #F7BC13;
+}
+.portfolio h1{
+  color: #4A4848;
+  font-size: 36px;
+}
+.portfolio{
+  margin-top: 110px;
+  margin-left: 80px;
+}
+
+.portfolio p{
+  color: #424147;
+  font-size: 16px;
+}
+.per1 {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 100px;
+}
+.person p{
+  padding-top: 50px;
+  width: 700px;
+  height: 290px;
+  font-size: 24px;
+  color: #4A4848;
+}
+
+.posts{
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: auto auto auto auto;
+}
+.brand-slider{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.brand-slider h4{
+  margin-top: 40px;
+  background: #424147;
+  padding: 0 8px;
+  font-size: 18px;
+  display: inline-block;
+  color: #f5e10a;
+  margin-bottom: 30px;
+}
+.brand-slider p{
+  color: #424147;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+#map{
+  width: 70%;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+.map1{
+margin-top: 150px;
+}
+footer{
+  padding: 30px 0;
+}
+
+.footer-container{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.about-us a{
+  color: #797979;
+  font-size: 18px;
+  padding: 0;
+  display: grid;
+  grid-column-gap: 3%;
+}
+
+.tweets a{
+  color: #797979;
+  font-size: 18px;
+  padding: 0;
+  display: grid;
+  grid-column-gap: 3%;
+}
+.tweets a:hover{
+  color: #0056A6;
+}
+.tweets h1{
+  margin-top: 20px;
+  color: #0056A6;
+  font-size: 30px;
+}
+.tweets p{
+  color: #808080;
+  font-size: 16px;
+}
+.about-us a:hover{
+  color: #0056A6;
+}
+.contacts4{
+  font-size: 13px;
+  color:#9EADBE;
+}
+.mail{
+  width: 220px;
+  height: 40px;
+  padding-left: 10px;
+}
+.contacts4 input{
+  margin: 5px;
+}
+.cont{
+  font-size: 9px;
+}
+.cont a{
+  color: #9EADBE;
+  border-bottom: 1px solid #9EADBE;
+}
+.cont1{
+  display: flex;
+  margin-top: 5px;
+}
+.cont1 a{
+  color:#9EADBE;
+  padding-left: 10px;
+}
+.cont2 a{
+  color:#9EADBE;
+  padding-left: 10px;
+}
+.cont2{
+  display: flex;
+  padding-top: 10px;
+}
+.contacts4 a:hover{
+  color: #0056A6;
+}
+@media screen and (max-width: 420px) {
+  .header-container{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+.main-menu{
+  display: none;
+}
+.main-menu li{
+  width: 100%;
+  display: block;
+  font-size: 12px;
+}
+.main-menu a{
+  display: block;
+  padding: 8px;
+}
+
+.header-container a{
+  margin-right: -65px;
+}
+.main-menu{
+  position: relative;
+  top: 30px;
+  right: 10px;
+}
+.top-slide {
+    background: url(./img/hedbg.png) no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.top-slide h2 {
+    font-size: 32px;
+}
+.top-slide p {
+    font-size: 16px;
+}
+.specialize-container p {
+    font-size: 16px;
+}
+.specialize-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+}
